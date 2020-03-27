@@ -1,0 +1,86 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text"
+        android:id="@+id/editText" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radios">
+
+
+        <RadioButton
+            android:id="@+id/serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="serif" />
+
+        <RadioButton
+            android:id="@+id/casual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="casual" />
+
+        <RadioButton
+            android:id="@+id/cursive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cursive" />
+        <RadioButton
+            android:id="@+id/monospace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="monospace" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/OK"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OK"
+            android:onClick="sendText"/>
+
+        <Button
+            android:id="@+id/Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:onClick="cancelRefresh"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:onClick="openText"
+        android:text="Открыть" />
+    </LinearLayout>
+</LinearLayout>
